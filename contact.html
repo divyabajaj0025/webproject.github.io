@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="shortcut-icon.jfif">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function validate(){
+        var username = document.signup.uname.value;
+        var name = document.signup.name.value;
+        var dateofbirth = document.signup.dob.value;
+        var password = document.signup.pwd.value;
+        if(username==""||name==""||dateofbirth==""||password=="")
+        {
+          alert("Fill all the fields")
+        }
+        else{
+          alert("Form submitted successfully")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class = "heading">
+        <h1>Adopt a Dog!</h1>
+      </div>
+      <ul class = "nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </header>
+    <div class = "content">
+      <form name="signup">
+        <fieldset>
+          <legend>Sign Up</legend>
+        <table>
+        <tr>
+          <td align="right"><label>Username:</label></td>
+          <td><input type="text" name="uname"><br/></td>
+        </tr>
+        <tr>
+          <td><label>Name:</label></td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td><label>DOB:</label></td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td align="right"><label>Password:</label></td>
+          <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><input type="button" value="Submit" onclick="validate();"></td>
+        </tr>
+        </table>
+      </fieldset>
+      </form>
+    </div>
+    <footer>
+      Copyright &copy; COSC 1101
+    </footer>
+  </body>
+</html>
